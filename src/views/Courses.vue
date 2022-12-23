@@ -12,7 +12,7 @@
       <tr id="item" v-for="course in courses" :key="course.id">
         <td>{{ course.code }}</td>
         <td>{{ course.title }}</td>
-        <td>{{ course.semester }}</td>
+        <td><a :href="'/' + course.semester">{{ course.semester }}</a></td>
         <td>{{ course.credits }}</td>
         <td v-if="course.description == ''">No course description is provided</td>
         <td v-else>{{ course.description }}</td>
@@ -45,15 +45,18 @@ export default {
 </script>
 
 <style scoped>
+table {
+
+}
 th {
   background: rgb(100, 151, 122);
   margin-bottom: 5px;
-  padding: 8px 45px;
+  padding: 8px 7.5vw;
 }
 td {
   background: rgb(186, 228, 204);
   margin-bottom: 5px;
-  padding: 8px 20px;
+  padding: 8px 2.5vw;
 }
 th, td {
   font-size: 15px;
