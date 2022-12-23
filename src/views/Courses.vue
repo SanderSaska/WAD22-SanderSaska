@@ -45,13 +45,10 @@ export default {
 </script>
 
 <style scoped>
-table {
-
-}
 th {
   background: rgb(100, 151, 122);
   margin-bottom: 5px;
-  padding: 8px 7.5vw;
+  padding: 8px 4vw;
 }
 td {
   background: rgb(186, 228, 204);
@@ -61,17 +58,12 @@ td {
 th, td {
   font-size: 15px;
 }
-
-#item {
-  justify-content: space-evenly;
-  flex-grow: 1;
-}
 .container {
   background: #d5d7d8;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
   margin: auto;
   margin-bottom: 30px;
-  padding: 10px 20px;
+  padding: 10px 50px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
